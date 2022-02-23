@@ -38,5 +38,25 @@ public class progate1 {
 	    String text = "プログラミングを勉強しよう";
 	    // 「Progateで」と変数textを連結して出力してください
 	    System.out.println("Progateで" + text);
+	    
+	    number = 3;
+	    System.out.println(number);
+	    // 変数numberの値に7を足して、変数numberを上書きしてください
+	    number = number + 7;
+	    // 変数numberを出力してください
+	    System.out.println(number);
+	    
+	    int length = 6;
+	    int height = 8;
+	    // 変数rectangleAreaに、四角形の面積を代入してください
+	    int rectangleArea = length * height;
+	    // 変数rectangleAreaを出力してください
+	    System.out.println(rectangleArea);
+	    // 変数triangleAreaに、三角形の面積を代入してください
+	    int triangleArea = length * height / 2;
+	    // 変数triangleAreaを出力してください
+	    System.out.println(triangleArea);
+	    
+	  
 	}
 }
