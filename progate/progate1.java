@@ -76,5 +76,11 @@ public class progate1 {
 	    System.out.println(7.0 / 2.0);
 	    // 7を2.0で割った値を出力してください
 	    System.out.println(7 / 2.0);
+	    
+	    int number1 = 7;
+	    int number2 = 2;
+	    System.out.println(number1 / number2);
+	    // number1をdouble型にキャストし、number2で割った値を出力してください
+	    System.out.println((double)number1 / number2);
 	}
 }
