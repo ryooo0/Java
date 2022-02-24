@@ -130,5 +130,35 @@ public class progate1 {
 	        System.out.println("凶です");
 	        break;
 	    }
+	    
+	    int number = 10;
+	    // while文を用いて、numberが0より大きい場合に繰り返す、繰り返し処理を作ってください
+	    while (number > 0) {
+	      System.out.println(number);
+	      number--;
+	    }
+	    
+	    // for文を用いて、繰り返し処理をつくってください
+	    for(int i = 1; i <= 10; i++) {
+	      System.out.println(i + "回目のループです");
+	    }
+	    
+	    int i = 1;
+	    while (i < 10) {
+	      // iが5の倍数のとき、繰り返し処理を終了してください
+	      if (i % 5 == 0) {
+	        break;
+	      }
+	      System.out.println(i);
+	      i++;
+	    }
+	    
+	    for (int j = 1; j < 10; j++) {
+	      // jが3の倍数のとき、処理をスキップしてください
+	      if (j % 3 == 0) {
+	        continue;
+	      }
+	      System.out.println(j);
+	    }
 	}
 }
