@@ -126,6 +126,9 @@ public class progate1 {
 	      case 2:
 	        System.out.println("吉です");
 	        break;
+	      default:
+	        System.out.println("凶です");
+	        break;
 	    }
 	}
 }
