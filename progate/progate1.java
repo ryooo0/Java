@@ -106,5 +106,15 @@ public class progate1 {
 	    System.out.println(8 < 5 || 3 >= 2);
 	    // 「8 < 5」でない、の結果を出力してください
 	    System.out.println(!(8 < 5));
+	    
+	    int number = 12;
+	    // numberが20より小さいとき、どちらでもないときの条件分岐を追加してください
+	    if (number < 10) {
+	      System.out.println("10より小さい");
+	    } else if (number < 20) {
+	      System.out.println("10以上、20より小さい");
+	    } else {
+	      System.out.println("20以上"); 
+	    }
 	}
 }
