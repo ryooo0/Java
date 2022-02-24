@@ -160,5 +160,22 @@ public class progate1 {
 	      }
 	      System.out.println(j);
 	    }
+	    
+	    // 変数namesに、配列を代入してください
+	    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+	    // インデックス番号が0の要素を出力してください
+	    System.out.println(names[0]);
+	    // インデックス番号が0を更新
+	    names[0] = "わんこ";
+	    
+	    // 配列を繰り返し表示
+	    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+	    for (int i = 0; i < names.length; i++) {
+	      System.out.println("私の名前は" + names[i] + "です");
+	    }
+	    // 拡張for文
+	    for (String name: names) {
+	      System.out.println("私の名前は" + name + "です");
+	    }
 	}
 }
