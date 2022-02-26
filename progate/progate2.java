@@ -125,3 +125,8 @@ class Main {
 	    }
 	  }
 }
+
+//java.lang.Mathを読み込んでください
+  //import java.lang.Math;
+//Mathクラスのroundメソッドを用いて、BMIを四捨五入して出力するようにしてください
+System.out.println(Math.round(bmi));
