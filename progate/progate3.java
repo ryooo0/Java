@@ -3,7 +3,7 @@ package progate;
 public class progate3 {
 	public static void main(String[] args) {
 	    // Personクラスのインスタンスを生成し、変数person1に代入してください
-	    Person person1 = new Person();
+	    Person person1 = new Person("Kate Jones");
 	    // person1に対して、helloメソッドを呼び出してください
 	    // インスタンスメソッドを使用
 	    person1.hello();
@@ -18,9 +18,17 @@ public class progate3 {
 
 //Personクラスを定義してください
 class Person {
+	// コンストラクタを定義。インスタンス生成時に自動実行
+	// コンストラクタがString型の引数を受け取るようにしてください
+    Person(String name) {
+	  System.out.println("インスタンスが生成されました");
+	  // インスタンスフィールドnameに値をセットしてください
+	  this.name = name;
+	}
+	  
 	// インスタンスメソッドhelloを定義してください
 	public void hello() {
-	  System.out.println("こんにちは");
+		System.out.println("こんにちは、私は" + this.name + "です");
 	}
 	// インスタンスフィールドnameを定義してください
 	public String name;
