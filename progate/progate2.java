@@ -130,3 +130,41 @@ class Main {
   //import java.lang.Math;
 //Mathクラスのroundメソッドを用いて、BMIを四捨五入して出力するようにしてください
 System.out.println(Math.round(bmi));
+
+
+//java.util.Scannerを読み込んでください
+　//import java.util.Scanner;
+class Main {
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("名前： ");
+		// 変数nameを定義し、コンソールから文字列を受け取って代入してください
+		String name = scanner.next();
+		// 「こんにちは◯◯さん」と出力してください
+		System.out.print("こんにちは" + name + "さん");
+	}
+}
+
+class Main {
+	  public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("名前：");
+		// 文字列の入力を受け取ってください
+		String firstName = scanner.next();
+		System.out.print("名字：");
+		// 文字列の入力を受け取ってください
+		String lastName = scanner.next();
+		System.out.print("年齢：");
+		// 整数の入力を受け取ってください
+		int age = scanner.nextInt();
+		System.out.print("身長(m)：");
+		// 小数の入力を受け取ってください
+		double height = scanner.nextDouble();
+		System.out.print("体重(kg)：");
+		// 小数の入力を受け取ってください
+		double weight = scanner.nextDouble();
+		Person.printData(Person.fullName(firstName, lastName), age, height, weight);
+	  }
+}
+
+
