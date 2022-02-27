@@ -48,4 +48,18 @@ class Person {
 	public static void printCount() {
 	    System.out.println("合計" + Person.count + "人です");
 	}
+	
+	  Person(String firstName, String lastName, int age, double height, double weight) {
+	    Person.count++;
+	    this.firstName = firstName;
+	    this.lastName = lastName;
+	    this.age = age;
+	    this.height = height;
+	    this.weight = weight;
+	  }
+	  Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
+	    // this()を用いて、他のコンストラクタを呼び出し、被ってる部分を省略できる
+	    this(firstName, middleName, lastName, age, height, weight);
+	    this.middleName = middleName;
+	  }
 }
