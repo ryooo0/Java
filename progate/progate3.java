@@ -18,6 +18,9 @@ public class progate3 {
 
 //Personクラスを定義してください
 class Person {
+	// int型のクラスフィールドcountを定義し、0を代入してください
+    // クラスフィールドはstaticをつける。
+	public static int count = 0;
 	// コンストラクタを定義。インスタンス生成時に自動実行
 	// コンストラクタがString型の引数を受け取るようにしてください
     Person(String name) {
