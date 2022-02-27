@@ -12,7 +12,12 @@ public class progate3 {
 	    person1.name = "Kate Jones";
 	    // person1のインスタンスフィールドnameの値を出力してください
 	    System.out.println(person1.name);
+	    // 「合計◯◯人です」と出力してください
+	    System.out.println("合計" + Person.count + "人です");
 	    
+	    // printCountメソッドを呼び出してください
+	    // クラス名.メソッド名で呼び出し
+	    Person.printCount();
 	}
 }
 
@@ -27,6 +32,8 @@ class Person {
 	  System.out.println("インスタンスが生成されました");
 	  // インスタンスフィールドnameに値をセットしてください
 	  this.name = name;
+	  // 変数countに1を足してください
+	  Person.count ++;
 	}
 	  
 	// インスタンスメソッドhelloを定義してください
@@ -35,4 +42,10 @@ class Person {
 	}
 	// インスタンスフィールドnameを定義してください
 	public String name;
+	
+    // クラスメソッドprintCount()を定義してください
+	// クラスメソッドはstaticをつける
+	public static void printCount() {
+	    System.out.println("合計" + Person.count + "人です");
+	}
 }
