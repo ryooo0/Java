@@ -26,6 +26,9 @@ class Person {
 	// int型のクラスフィールドcountを定義し、0を代入してください
     // クラスフィールドはstaticをつける。
 	public static int count = 0;
+    // 「private」にすると他のフォールドから参照できなくなる
+	private static int count = 0;
+	private String firstName;
 	// コンストラクタを定義。インスタンス生成時に自動実行
 	// コンストラクタがString型の引数を受け取るようにしてください
     Person(String name) {
