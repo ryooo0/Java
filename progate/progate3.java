@@ -30,10 +30,15 @@ class Person {
 	private static int count = 0;
 	private String firstName;
 	private String middleName;
-	// 他フィールドから安全にprivate不フィールドを参照するため、middleNameフィールドのゲッターを定義
-    // getメソッド名で命名する。
+	// 他フィールドから安全にprivateフィールドを参照するため、middleNameフィールドのゲッターを定義
+    // 「getメソッド名」で命名する。
 	public String getMiddleName() {
 	  return this.middleName;
+	}
+	// 他フィールドから安全にprivateフィールドを変更するため、middleNameフィールドのセッターを定義
+	// 「setメソッド名」で命名する。
+	public void setMiddleName(String middleName) {
+	  this.middleName = middleName;
 	}
 	// コンストラクタを定義。インスタンス生成時に自動実行
 	// コンストラクタがString型の引数を受け取るようにしてください
