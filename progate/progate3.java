@@ -26,9 +26,15 @@ class Person {
 	// int型のクラスフィールドcountを定義し、0を代入してください
     // クラスフィールドはstaticをつける。
 	public static int count = 0;
-    // 「private」にすると他のフォールドから参照できなくなる
+    // 「private」にすると他のフォールドから参照できなくなる。クラス内からは参照可能
 	private static int count = 0;
 	private String firstName;
+	private String middleName;
+	// 他フィールドから安全にprivate不フィールドを参照するため、middleNameフィールドのゲッターを定義
+    // getメソッド名で命名する。
+	public String getMiddleName() {
+	  return this.middleName;
+	}
 	// コンストラクタを定義。インスタンス生成時に自動実行
 	// コンストラクタがString型の引数を受け取るようにしてください
     Person(String name) {
