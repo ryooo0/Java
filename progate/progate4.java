@@ -33,9 +33,13 @@ class Vehicle {
 	    System.out.println("走行距離：" + this.distance + "km");
 	  }
 }
-//Vehicleクラスを継承
+//Vehicleクラス(スーパークラス)を継承
 class Car extends Vehicle {
-	  
+	public void printData() {
+	    // superを用いて、オーバーライドの中のスーパークラス記載の重複部分を省略できる
+	    super.printData();
+	    System.out.println("ガソリン量：" + this.fuel + " L");
+	}
 }
 //Vehicleクラスを継承
 class Bicycle extends Vehicle {
