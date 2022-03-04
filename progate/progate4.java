@@ -10,7 +10,8 @@ public class progate4 {
 class Vehicle {
 	  private String name;
 	  private String color;
-	  private int distance = 0;
+	  // protectedはクラス内とサブクラス内の参照を許可
+	  protected int distance = 0;
 
 	  public String getName() {
 	    return this.name;
@@ -43,5 +44,10 @@ class Car extends Vehicle {
 }
 //Vehicleクラスを継承
 class Bicycle extends Vehicle {
-	  
+    // サブクラスのコンストラクタを設定するときは、スーパークラスのコンストラクタを必ず実行しないとだめ。superで参照できる
+	Car(String name, String color) {
+		  super(name, color);
+	}
 }
+
+
