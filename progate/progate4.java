@@ -4,6 +4,10 @@ public class progate4 {
 	public static void main(String[] args) {
 		  Car car = new Car();
 		  Bicycle bicycle = new Bicycle();
+		  
+		  // getOwnerメソッドを用いてbicycleのownerを取得(Person型)
+		  // PersonクラスのprintDataメソッドを使える
+		  bicycle.getOwner().printData();
 	}
 }
 
@@ -14,6 +18,8 @@ abstract class Vehicle {
 	  private String color;
 	  // protectedはクラス内とサブクラス内の参照を許可
 	  protected int distance = 0;
+	  // Person型のインスタンスフィールドownerを定義
+	  private Person owner;
 
 	  public String getName() {
 	    return this.name;
@@ -24,12 +30,23 @@ abstract class Vehicle {
 	  public int getDistance() {
 	    return this.distance;
 	  }
+	  // ownerフィールドのゲッターを定義
+	  // 戻り値はPerson型になる
+	  public Person getOwner() {
+	    return this.owner;
+	  }
+	  
 	  public void setName(String name) {
 	    this.name = name;
 	  }
 	  public void setColor(String color) {
 	    this.color = color;
 	  }
+	  // ownerフィールドのセッターを定義
+	  public void setOwner(Person person) {
+	    this.owner = person;
+	  }
+	  
 	  public void printData() {
 	    System.out.println("名前：" + this.name);
 	    System.out.println("色：" + this.color);
