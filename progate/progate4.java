@@ -72,5 +72,3 @@ class Bicycle extends Vehicle {
 		  super(name, color);
 	}
 }
-
-
