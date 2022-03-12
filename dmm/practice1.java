@@ -8,11 +8,14 @@ public class practice1 {
 		str1 = "Hello World!";
 		System.out.println(num1);
 		System.out.println(str1);
-
 		num1 = 20;
 		System.out.println(num1);
-
 		int num2 = 30;
 		System.out.println(num2);
+		
+		// 定数の宣言
+        final int MIN_NUMBER = 10;
+        System.out.println(MIN_NUMBER);
+        // 定数のため再代入しようとするとエラー
 	}
 }
