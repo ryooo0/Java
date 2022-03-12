@@ -58,7 +58,7 @@ abstract class Vehicle {
 		System.out.println("走行距離：" + this.distance + "km");
 	}
 
-	// 抽象メソッドrunを定義
+	// 抽象メソッドrunを定義　abstract
 	// 抽象メソッドがあるときは、必ずサブクラスでそのメソッドを定義しないといけない
 	abstract public void run(int distance);
 }
