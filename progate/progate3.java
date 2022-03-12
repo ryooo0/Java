@@ -8,8 +8,6 @@ public class progate3 {
 		// インスタンスメソッドを使用
 		person1.hello();
 
-		// person1のインスタンスフィールドnameに「Kate Jones」をセットしてください
-		person1.name = "Kate Jones";
 		// person1のインスタンスフィールドnameの値を出力してください
 		System.out.println(person1.name);
 		// 「合計◯◯人です」と出力してください
@@ -25,7 +23,6 @@ public class progate3 {
 class Person {
 	// int型のクラスフィールドcountを定義し、0を代入してください
 	// クラスフィールドはstaticをつける。
-	public static int count = 0;
 	// 「private」にすると他のフォールドから参照できなくなる。クラス内からは参照可能
 	private static int count = 0;
 	private String firstName;
@@ -54,6 +51,7 @@ class Person {
 	}
 
 	// インスタンスメソッドhelloを定義してください
+	// インスタンスメソッドはstaticをなし
 	public void hello() {
 		System.out.println("こんにちは、私は" + this.name + "です");
 	}
